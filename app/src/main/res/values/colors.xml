@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <!-- Base Colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="primarycolor">#D90368</color>
-    <color name="secondarycolor">#190933</color>
-    <color name="bg_grey_light">#ececec</color>
+    <!-- Brand Colors -->
+    <color name="primarycolor">#D90368</color>   <!-- Custom brand primary -->
+    <color name="secondarycolor">#190933</color> <!-- Custom brand secondary -->
+
+    <!-- Material Purples -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="purple_700">#7B1FA2</color>
+
+    <!-- Greys -->
+    <color name="bg_grey_light">#ECECEC</color> <!-- background -->
+    <color name="grey_light">#E0E0E0</color>    <!-- light grey -->
+    <color name="grey_medium">#9E9E9E</color>   <!-- medium grey -->
+    <color name="grey_dark">#616161</color>     <!-- dark grey -->
 
 </resources>

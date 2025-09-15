@@ -6,18 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".auth.RegisterActivity">
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="300dp"
             android:background="@color/primarycolor"
             android:orientation="vertical">
-            
+
             <TextView
                 android:layout_width="wrap_content"
                 android:text="Let's know you"
@@ -55,18 +55,27 @@
                 android:layout_margin="16dp"
                 android:orientation="vertical">
 
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="4dp"
+                app:strokeWidth="2dp"
+                app:strokeColor="@color/secondarycolor"
+                app:layout_constraintTop_toBottomOf="@id/numberLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/userImage"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center_horizontal"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/numberLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     app:lottie_autoPlay="true"
                     app:lottie_loop="true"
                     app:lottie_rawRes="@raw/image" />
+        </com.google.android.material.card.MaterialCardView>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -87,7 +96,7 @@
                         android:id="@+id/userName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:drawableLeft="@drawable/name"
+                        android:drawableLeft="@drawable/user"
                         android:inputType="text"
                         android:drawablePadding="12dp"
                         android:hint="Full Name" />
@@ -150,7 +159,7 @@
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
-        
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
