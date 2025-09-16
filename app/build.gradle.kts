@@ -50,6 +50,8 @@ dependencies {
     // Image loading
     implementation("com.github.bumptech.glide:glide:5.0.4")
     implementation(libs.ads.mobile.sdk)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     annotationProcessor("com.github.bumptech.glide:compiler:5.0.4") // <-- Add this for Glide
 
     // Circle ImageView
